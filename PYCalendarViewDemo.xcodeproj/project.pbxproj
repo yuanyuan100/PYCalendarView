@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F62369771E14BF6700230337 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F62369761E14BF6700230337 /* main.m */; };
+		F623697A1E14BF6700230337 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F62369791E14BF6700230337 /* AppDelegate.m */; };
+		F623697D1E14BF6700230337 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F623697C1E14BF6700230337 /* ViewController.m */; };
+		F62369801E14BF6700230337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F623697E1E14BF6700230337 /* Main.storyboard */; };
+		F62369821E14BF6700230337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62369811E14BF6700230337 /* Assets.xcassets */; };
+		F62369851E14BF6700230337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62369831E14BF6700230337 /* LaunchScreen.storyboard */; };
+		F62369901E14C18300230337 /* PYDayOfElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F623698F1E14C18300230337 /* PYDayOfElementView.m */; };
+		F62369931E14C1F500230337 /* PYWeekOfElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62369921E14C1F500230337 /* PYWeekOfElementView.m */; };
+		F62369961E14C22B00230337 /* PYMonthOfElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62369951E14C22B00230337 /* PYMonthOfElementView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F62369721E14BF6700230337 /* PYCalendarViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PYCalendarViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62369761E14BF6700230337 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F62369781E14BF6700230337 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F62369791E14BF6700230337 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F623697B1E14BF6700230337 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F623697C1E14BF6700230337 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F623697F1E14BF6700230337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F62369811E14BF6700230337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F62369841E14BF6700230337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F62369861E14BF6700230337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F623698D1E14C02E00230337 /* PYCalendarMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PYCalendarMarco.h; sourceTree = "<group>"; };
+		F623698E1E14C18300230337 /* PYDayOfElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYDayOfElementView.h; sourceTree = "<group>"; };
+		F623698F1E14C18300230337 /* PYDayOfElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYDayOfElementView.m; sourceTree = "<group>"; };
+		F62369911E14C1F500230337 /* PYWeekOfElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYWeekOfElementView.h; sourceTree = "<group>"; };
+		F62369921E14C1F500230337 /* PYWeekOfElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYWeekOfElementView.m; sourceTree = "<group>"; };
+		F62369941E14C22B00230337 /* PYMonthOfElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMonthOfElementView.h; sourceTree = "<group>"; };
+		F62369951E14C22B00230337 /* PYMonthOfElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMonthOfElementView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F623696F1E14BF6700230337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F62369691E14BF6700230337 = {
+			isa = PBXGroup;
+			children = (
+				F62369741E14BF6700230337 /* PYCalendarViewDemo */,
+				F62369731E14BF6700230337 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F62369731E14BF6700230337 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F62369721E14BF6700230337 /* PYCalendarViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F62369741E14BF6700230337 /* PYCalendarViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F623698C1E14BF8200230337 /* PYCalendarView */,
+				F62369781E14BF6700230337 /* AppDelegate.h */,
+				F62369791E14BF6700230337 /* AppDelegate.m */,
+				F623697B1E14BF6700230337 /* ViewController.h */,
+				F623697C1E14BF6700230337 /* ViewController.m */,
+				F623697E1E14BF6700230337 /* Main.storyboard */,
+				F62369811E14BF6700230337 /* Assets.xcassets */,
+				F62369831E14BF6700230337 /* LaunchScreen.storyboard */,
+				F62369861E14BF6700230337 /* Info.plist */,
+				F62369751E14BF6700230337 /* Supporting Files */,
+			);
+			path = PYCalendarViewDemo;
+			sourceTree = "<group>";
+		};
+		F62369751E14BF6700230337 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F62369761E14BF6700230337 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F623698C1E14BF8200230337 /* PYCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				F623698D1E14C02E00230337 /* PYCalendarMarco.h */,
+				F623698E1E14C18300230337 /* PYDayOfElementView.h */,
+				F623698F1E14C18300230337 /* PYDayOfElementView.m */,
+				F62369911E14C1F500230337 /* PYWeekOfElementView.h */,
+				F62369921E14C1F500230337 /* PYWeekOfElementView.m */,
+				F62369941E14C22B00230337 /* PYMonthOfElementView.h */,
+				F62369951E14C22B00230337 /* PYMonthOfElementView.m */,
+			);
+			path = PYCalendarView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F62369711E14BF6700230337 /* PYCalendarViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F62369891E14BF6700230337 /* Build configuration list for PBXNativeTarget "PYCalendarViewDemo" */;
+			buildPhases = (
+				F623696E1E14BF6700230337 /* Sources */,
+				F623696F1E14BF6700230337 /* Frameworks */,
+				F62369701E14BF6700230337 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PYCalendarViewDemo;
+			productName = PYCalendarViewDemo;
+			productReference = F62369721E14BF6700230337 /* PYCalendarViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F623696A1E14BF6700230337 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = IAsk;
+				TargetAttributes = {
+					F62369711E14BF6700230337 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3NL3YDJRJ5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F623696D1E14BF6700230337 /* Build configuration list for PBXProject "PYCalendarViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F62369691E14BF6700230337;
+			productRefGroup = F62369731E14BF6700230337 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F62369711E14BF6700230337 /* PYCalendarViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F62369701E14BF6700230337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62369851E14BF6700230337 /* LaunchScreen.storyboard in Resources */,
+				F62369821E14BF6700230337 /* Assets.xcassets in Resources */,
+				F62369801E14BF6700230337 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F623696E1E14BF6700230337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62369931E14C1F500230337 /* PYWeekOfElementView.m in Sources */,
+				F62369901E14C18300230337 /* PYDayOfElementView.m in Sources */,
+				F623697D1E14BF6700230337 /* ViewController.m in Sources */,
+				F623697A1E14BF6700230337 /* AppDelegate.m in Sources */,
+				F62369961E14C22B00230337 /* PYMonthOfElementView.m in Sources */,
+				F62369771E14BF6700230337 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F623697E1E14BF6700230337 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F623697F1E14BF6700230337 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F62369831E14BF6700230337 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F62369841E14BF6700230337 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F62369871E14BF6700230337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F62369881E14BF6700230337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F623698A1E14BF6700230337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NL3YDJRJ5;
+				INFOPLIST_FILE = PYCalendarViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IAsk.PYCalendarViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F623698B1E14BF6700230337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NL3YDJRJ5;
+				INFOPLIST_FILE = PYCalendarViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IAsk.PYCalendarViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F623696D1E14BF6700230337 /* Build configuration list for PBXProject "PYCalendarViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F62369871E14BF6700230337 /* Debug */,
+				F62369881E14BF6700230337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F62369891E14BF6700230337 /* Build configuration list for PBXNativeTarget "PYCalendarViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F623698A1E14BF6700230337 /* Debug */,
+				F623698B1E14BF6700230337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F623696A1E14BF6700230337 /* Project object */;
+}
