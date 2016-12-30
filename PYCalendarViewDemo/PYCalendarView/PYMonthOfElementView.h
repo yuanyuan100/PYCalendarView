@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PYMonthOfElementView : UIView
-
+-(instancetype)initWihtX:(CGFloat)x Y:(CGFloat)y widht:(CGFloat)width date:(NSDate *)date;
+@property (nonatomic, readonly, assign) CGFloat height;
 @end

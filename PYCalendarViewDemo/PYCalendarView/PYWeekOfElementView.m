@@ -56,10 +56,11 @@ struct {
 #pragma mark --------- UI
 - (void)creatUI {
     for (NSInteger i = 0; i < WEEK_DAYS; i++) {
-        PYDayOfElementView *dayView = [[PYDayOfElementView alloc] initWithFrame:CGRectMake(0 + WEEKVIEW_WIDTH_7 * i,\
+        PYDayOfElementView *dayView = [[PYDayOfElementView alloc] initWithFrame:CGRectMake(WEEKVIEW_WIDTH_7/2 - ELEMENT_WIDTH/2 + WEEKVIEW_WIDTH_7 * i,\
                                                                                         WEEKVIEW_HEIGHT/2 - ELEMENT_HEIGHT/2,\
                                                                                         ELEMENT_WIDTH,\
                                                                                         ELEMENT_HEIGHT)];
+        
         [self.dayOfElementSource addObject:dayView];
         [self addSubview:dayView];
         

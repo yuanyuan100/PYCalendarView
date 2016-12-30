@@ -16,6 +16,7 @@
 		F62369901E14C18300230337 /* PYDayOfElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F623698F1E14C18300230337 /* PYDayOfElementView.m */; };
 		F62369931E14C1F500230337 /* PYWeekOfElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62369921E14C1F500230337 /* PYWeekOfElementView.m */; };
 		F62369961E14C22B00230337 /* PYMonthOfElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62369951E14C22B00230337 /* PYMonthOfElementView.m */; };
+		F625A6091E162D6D003E75D3 /* PYCalendarContentProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F625A6081E162D6D003E75D3 /* PYCalendarContentProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		F62369921E14C1F500230337 /* PYWeekOfElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYWeekOfElementView.m; sourceTree = "<group>"; };
 		F62369941E14C22B00230337 /* PYMonthOfElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMonthOfElementView.h; sourceTree = "<group>"; };
 		F62369951E14C22B00230337 /* PYMonthOfElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMonthOfElementView.m; sourceTree = "<group>"; };
+		F625A6071E162D6D003E75D3 /* PYCalendarContentProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCalendarContentProvider.h; sourceTree = "<group>"; };
+		F625A6081E162D6D003E75D3 /* PYCalendarContentProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCalendarContentProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				F62369921E14C1F500230337 /* PYWeekOfElementView.m */,
 				F62369941E14C22B00230337 /* PYMonthOfElementView.h */,
 				F62369951E14C22B00230337 /* PYMonthOfElementView.m */,
+				F625A6071E162D6D003E75D3 /* PYCalendarContentProvider.h */,
+				F625A6081E162D6D003E75D3 /* PYCalendarContentProvider.m */,
 			);
 			path = PYCalendarView;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			files = (
 				F62369931E14C1F500230337 /* PYWeekOfElementView.m in Sources */,
 				F62369901E14C18300230337 /* PYDayOfElementView.m in Sources */,
+				F625A6091E162D6D003E75D3 /* PYCalendarContentProvider.m in Sources */,
 				F623697D1E14BF6700230337 /* ViewController.m in Sources */,
 				F623697A1E14BF6700230337 /* AppDelegate.m in Sources */,
 				F62369961E14C22B00230337 /* PYMonthOfElementView.m in Sources */,
@@ -342,6 +348,7 @@
 				F623698B1E14BF6700230337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

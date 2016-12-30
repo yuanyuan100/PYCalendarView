@@ -27,6 +27,11 @@
 #define ELEMENT_HEIGHT 44
 #endif
 
+/// 周元素的高度
+#ifndef WEEK_ELEMENT_HEIGHT
+#define WEEK_ELEMENT_HEIGHT 54.0F
+#endif
+
 /// 红点(事件)
 #ifndef WORKVIEW_SIZE
 #define WORKVIEW_SIZE CGSizeMake(6, 6)
