@@ -57,14 +57,23 @@
 }
 
 - (void)selectedCurrent:(UITapGestureRecognizer *)tap {
+    __weak PYDayOfElementView *weakSelf = self;
+    if (self.WillSelectBlock) {
+        self.WillSelectBlock(weakSelf);
+    }
     if (self.state != PYDayOfElementViewState_Selected) {
         self.state = PYDayOfElementViewState_Selected;
         [[NSNotificationCenter defaultCenter] postNotificationName:@"PYDayOfElementViewStateChanged" object:nil userInfo:@{@"dateStr":self.dateStr}];
+    }
+    
+    if (self.DidSelectBlock) {
+        self.DidSelectBlock(weakSelf);
     }
 }
 
 - (void)addNotificationCenter {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getNotificationAboutState:) name:@"PYDayOfElementViewStateChanged" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getNotificationAboutToday:) name:@"PYDayOfElementViewTodayChanged" object:nil];
 }
 
 -  (void)getNotificationAboutState:(NSNotification *)noti {
@@ -72,6 +81,16 @@
         if (![noti.userInfo[@"dateStr"] isEqualToString:self.dateStr]) {
             if (self.state == PYDayOfElementViewState_Selected) {
                 self.state = PYDayOfElementViewState_Normal;
+            }
+        }
+    }
+}
+
+- (void)getNotificationAboutToday:(NSNotification *)noti {
+    if ([noti.name isEqualToString:@"PYDayOfElementViewTodayChanged"]) {
+        if (![noti.userInfo[@"dateStr"] isEqualToString:self.dateStr]) {
+            if (self.latelyType == PYDayOfElementViewLately_Today) {
+                self.latelyType = PYDayOfElementViewLately_Yesterday;
             }
         }
     }
@@ -127,6 +146,7 @@
     switch (latelyType) {
         case PYDayOfElementViewLately_Today:
             _todayView.hidden = NO;
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"PYDayOfElementViewTodayChanged" object:nil userInfo:@{@"dateStr":self.dateStr}];
             break;
         default:
             _todayView.hidden = YES;
@@ -238,6 +258,7 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"PYDayOfElementViewStateChanged" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"PYDayOfElementViewTodayChanged" object:nil];
 }
 
 @end

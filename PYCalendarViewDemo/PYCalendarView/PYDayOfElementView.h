@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, PYDayOfElementViewWeekType) {
+    PYDayOfElementViewWeek_Sunday,
+    PYDayOfElementViewWeek_Monday,
+    PYDayOfElementViewWeek_Tuesday,
+    PYDayOfElementViewWeek_Wednesday,
+    PYDayOfElementViewWeek_Thursday,
+    PYDayOfElementViewWeek_Friday,
+    PYDayOfElementViewWeek_Saturday,
+};
+
 typedef NS_ENUM(NSUInteger, PYDayOfElementViewMonth) {
     PYDayOfElementViewMonth_Unknow,
     PYDayOfElementViewMonth_Current,
@@ -50,4 +60,8 @@ typedef NS_ENUM(NSUInteger, PYDayOfElementViewWorkType) {
 @property (nonatomic, assign) PYDayOfElementViewMonth monthType;
 /** 设置被选择 */
 @property (nonatomic, assign) PYDayOfElementViewState state;
+/** 该日期为周几 */
+@property (nonatomic, assign) PYDayOfElementViewWeekType weekType;
+@property (nonatomic, strong) void(^WillSelectBlock)(PYDayOfElementView *dayView);
+@property (nonatomic, strong) void(^DidSelectBlock)(PYDayOfElementView *dayView);
 @end
