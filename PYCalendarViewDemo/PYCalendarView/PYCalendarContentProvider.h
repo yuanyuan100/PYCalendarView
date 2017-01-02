@@ -26,9 +26,14 @@
  */
 - (NSRange)dayOfMonthWithDate:(NSDate *)date;
 
+// 本月1号周几
+- (NSInteger)firstWeekdayInThisMonth:(NSDate *)date;
+// 上个月
+- (NSDate *)lastMonthTransformDate:(NSDate *)date;
+///下个月
+- (NSDate *)nextMonthTransformDate:(NSDate *)date;
 
 
-
-- (NSString *)earlierThisMonthString:(NSDate *)date;
-- (NSUInteger)weekOfMonthFirstDay:(NSDate *)date;
+// 一个月包含周，周包含天
+- (NSArray<NSString *> *)monthAllDayWith:(NSDate *)date;
 @end

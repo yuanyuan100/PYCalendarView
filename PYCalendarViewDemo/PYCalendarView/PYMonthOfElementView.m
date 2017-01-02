@@ -15,6 +15,8 @@
 @property (nonatomic, strong) PYCalendarContentProvider *provider;
 @property (nonatomic, readwrite, assign) CGFloat height;
 @property (nonatomic, strong) NSMutableArray *weekOfElementSource;
+
+@property (nonatomic, strong) NSArray *weekS;
 @end
 
 @implementation PYMonthOfElementView
@@ -31,7 +33,7 @@
     _width = width;
     _date = date;
     
-//    [self creatUI];
+    [self creatUI];
     
     return self;
 }
@@ -55,25 +57,32 @@
     for (NSInteger i = 0, count = weekRange.length; i < count; i++) {
         PYWeekOfElementView *weekView = [[PYWeekOfElementView alloc] initWithFrame:CGRectMake(0, WEEK_ELEMENT_HEIGHT * i, _width, WEEK_ELEMENT_HEIGHT)];
         weekView.index = i;
-//        weekView.dataSource = self;
-//        weekView.delegate = self;
+        weekView.dataSource = self;
+        weekView.delegate = self;
         [self.weekOfElementSource addObject:weekView];
         [self addSubview:weekView];
+        self.weekS = [self.provider monthAllDayWith:_date];
+        
+        [weekView reloadDataSource];
     }
 }
 
 #pragma mark ---------- 代理协议
-//- (NSArray<NSString *> *)py_weekOfElementView:(PYWeekOfElementView *)weekView didSetDateWithIndex:(NSUInteger)index {
-//
-//}
-//
-//- (NSRange)py_weekOfElementView:(PYWeekOfElementView *)weekView didSetCurrentMonthWithIndex:(NSUInteger)index {
-//
-//}
-//
-//- (PYWeekOfElementViewType)py_weekOfElementView:(PYWeekOfElementView *)weekView didSetTodayWithIndex:(NSUInteger)index {
-//
-//}
+- (NSArray<NSString *> *)py_weekOfElementView:(PYWeekOfElementView *)weekView didSetDateWithIndex:(NSUInteger)index {
+    
+    return self.weekS[index];
+}
+
+- (NSRange)py_weekOfElementView:(PYWeekOfElementView *)weekView didSetCurrentMonthWithIndex:(NSUInteger)index {
+    return NSMakeRange(0, 0);
+}
+
+- (PYWeekOfElementViewType)py_weekOfElementView:(PYWeekOfElementView *)weekView didSetTodayWithIndex:(NSUInteger)index {
+    if (index == 0) {
+        return PYWeekOfElementView_Monday;
+    }
+    return PYWeekOfElementView_NotThisWeek;
+}
 
 #pragma mark ---------- getter
 - (NSMutableArray *)weekOfElementSource {
